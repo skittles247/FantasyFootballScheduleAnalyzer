@@ -292,3 +292,5 @@ formatted_print(["Team", "Seed", "Avg Seed", "Seed Diff", "Wins", "Avg Wins",
 for team_summ in season_summary:
     formatted_print(team_summ)
 
+python3 ScheduleAnalyzer.py 0 13 4 --use-csv C:\Users\jcrenshaw\Desktop\2023 Results.csv
+
