@@ -174,9 +174,9 @@ n_playoff_teams = int(sys.argv[3])
 all_weeks = range(1,final_week+1)
 
 # these are optional arguments
-year = "2018"
-use_csv = False
-csv_path = ""
+year = "2023"
+use_csv = True
+csv_path = "C:\Users\jcrenshaw\Desktop\2023 Results.csv"
 
 # get optional arguments from command line
 for i in range(4, len(sys.argv) - 1, 2):
@@ -292,3 +292,4 @@ formatted_print(["Team", "Seed", "Avg Seed", "Seed Diff", "Wins", "Avg Wins",
 for team_summ in season_summary:
     formatted_print(team_summ)
 
+python3 ScheduleAnalyzer.py 0 13 4 --use-csv C:\Users\jcrenshaw\Desktop\2023 Results.csv
