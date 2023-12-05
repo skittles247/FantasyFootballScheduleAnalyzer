@@ -48,7 +48,7 @@ for the code to get information from the ESPN Fantasy API.
 
 usage_msg = """
 Usage:
-  python3 ScheduleAnalyzer.py arg1 arg2 arg3 [optional args]
+  python3 ScheduleAnalyzer.py 0 13 4 --use-csv C:\Users\jcrenshaw\Desktop\2023 Results.csv
 
   arg1 = ESPN league ID
   arg2 = number of weeks in regular season
@@ -174,9 +174,9 @@ n_playoff_teams = int(sys.argv[3])
 all_weeks = range(1,final_week+1)
 
 # these are optional arguments
-year = "2018"
-use_csv = False
-csv_path = ""
+year = "2023"
+use_csv = True
+csv_path = "C:\Users\jcrenshaw\Desktop\2023 results.csv"
 
 # get optional arguments from command line
 for i in range(4, len(sys.argv) - 1, 2):
